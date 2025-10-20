@@ -1,26 +1,4 @@
-// Book.java
-public class Book {
-    private String title;
 
-    public Book(String title) {
-        this.title = title;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-}
-
-// User.java
-public abstract class User {
-    protected String name;
-
-    public User(String name) {
-        this.name = name;
-    }
-
-    public abstract void showRole();
-}
 
 // Member.java
 public class Member extends User {

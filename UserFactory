@@ -1,0 +1,12 @@
+
+public class UserFactory {
+    public static User createUser(String type, String name) {
+        if(type.equalsIgnoreCase("member")) {
+            return new Member(name);
+        } else if(type.equalsIgnoreCase("librarian")) {
+            return new Librarian(name);
+        } else {
+            throw new IllegalArgumentException("Invalid user type");
+        }
+    }
+}
